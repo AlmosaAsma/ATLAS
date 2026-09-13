@@ -1,0 +1,25 @@
+# ATLAS runtime dependencies
+#
+# Recommended pinned reproducibility environment.
+# Python: 3.10
+#
+# These versions are pinned to provide a stable, mutually compatible
+# environment for the ATLAS simulator and sensitivity-analysis scripts.
+
+
+# Core simulator and analysis
+networkx==2.6.3
+numpy==1.22.4
+scipy==1.8.1
+simpy==4.0.1
+matplotlib==3.6.3
+scikit-learn==1.1.3
+tqdm==4.64.1
+
+# Snapshot-selection sensitivity analysis
+node2vec==0.4.6
+karateclub==1.3.3
+
+# Trained GraphSAGE sensitivity analysis
+torch==2.0.1
+torch-geometric==2.3.1

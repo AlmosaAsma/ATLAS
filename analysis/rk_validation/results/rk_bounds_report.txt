@@ -1,0 +1,127 @@
+SMALL-GRAPH VALIDATION OF THE ATLAS MANUSCRIPT R_k BOUNDS
+================================================================================
+
+Definition:
+  R_k = min_{S subseteq V, |S| <= k} C(G-S)
+  C(G) = sum_i p_i^2
+
+Bounds being validated (exactly as proposed for the manuscript):
+  1/n <= R_k <= min{C(G-S_HD), C(G-S_HB)}
+
+The true R_k is computed by exhaustive enumeration of every S with |S| <= k.
+No other lower-bound method is used.
+
+--------------------------------------------------------------------------------
+Graph: path_10
+n=10, m=9, k=2, enumerated=56
+Exact R_k:                   0.343750000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    0.781250000000
+HB feasible upper bound:    0.500000000000
+Best feasible upper bound:  0.500000000000 (HB)
+Certified interval:          [0.100000000000, 0.500000000000]
+UB equals exact R_k:         False
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: cycle_10
+n=10, m=10, k=2, enumerated=56
+Exact R_k:                   0.500000000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    1.000000000000
+HB feasible upper bound:    1.000000000000
+Best feasible upper bound:  1.000000000000 (HD)
+Certified interval:          [0.100000000000, 1.000000000000]
+UB equals exact R_k:         False
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: star_10
+n=10, m=9, k=2, enumerated=56
+Exact R_k:                   0.111111111111
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    0.111111111111
+HB feasible upper bound:    0.111111111111
+Best feasible upper bound:  0.111111111111 (HD)
+Certified interval:          [0.100000000000, 0.111111111111]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: complete_10
+n=10, m=45, k=2, enumerated=56
+Exact R_k:                   1.000000000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    1.000000000000
+HB feasible upper bound:    1.000000000000
+Best feasible upper bound:  1.000000000000 (HD)
+Certified interval:          [0.100000000000, 1.000000000000]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: er_10_p035
+n=10, m=19, k=2, enumerated=56
+Exact R_k:                   0.781250000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    1.000000000000
+HB feasible upper bound:    0.781250000000
+Best feasible upper bound:  0.781250000000 (HB)
+Certified interval:          [0.100000000000, 0.781250000000]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: ba_10_m2
+n=10, m=16, k=2, enumerated=56
+Exact R_k:                   0.468750000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    0.468750000000
+HB feasible upper bound:    0.468750000000
+Best feasible upper bound:  0.468750000000 (HD)
+Certified interval:          [0.100000000000, 0.468750000000]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: ws_10_k4_p02
+n=10, m=20, k=2, enumerated=56
+Exact R_k:                   1.000000000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    1.000000000000
+HB feasible upper bound:    1.000000000000
+Best feasible upper bound:  1.000000000000 (HD)
+Certified interval:          [0.100000000000, 1.000000000000]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+--------------------------------------------------------------------------------
+Graph: two_cliques_bridge_10
+n=10, m=21, k=2, enumerated=56
+Exact R_k:                   0.500000000000
+1/n certified lower bound:  0.100000000000
+HD feasible upper bound:    0.500000000000
+HB feasible upper bound:    0.500000000000
+Best feasible upper bound:  0.500000000000 (HD)
+Certified interval:          [0.100000000000, 0.500000000000]
+UB equals exact R_k:         True
+LB <= exact R_k:             True
+exact R_k <= UB:             True
+BOUND CHECK:                 PASS
+
+================================================================================
+OVERALL RESULT: PASS
